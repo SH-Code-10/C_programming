@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int main() {
     int marks;
 printf("NOte:\nYOU will fail if you get less than 30 mark...\n");
