@@ -1,0 +1,27 @@
+Making normal calculator using switch case in c
+#include<stdio.h>
+int main(){
+    int a,b,_case;
+    printf("ENTER a and b\n");
+    scanf("%d\n%d",&a,&b);
+    printf("Enter 1 for addition\n Enter 2 for subtraction\nEnter 3 for multiplication\nEnter 4 for division\n");
+    scanf("%d",&_case);
+    switch(_case){
+        case 1:
+        printf("the addition of the numbers=%d",a+b);
+        break;
+
+    case 2:
+    printf("the subtraction of the numbers=%d",a-b);
+    break;
+    case 3:
+    printf("the multiplication of the numbers=%d",a*b);
+    break;
+    case 4:
+    printf("the division of the numbers=%d",a/b);break;
+    default:
+    printf("Invalid input");
+    }
+
+
+}
