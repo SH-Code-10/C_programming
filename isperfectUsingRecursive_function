@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <math.h>
+
+void isperfect(int num) {
+    int n=num;
+    int i,count=0;
+    if(num==50){
+        return;
+    }
+    for(i=1;i<=num/2;i++){
+        if(num%i==0){
+            count+=i;
+        }
+       
+        
+    }
+     if(num==count){
+            printf("%d\n",count);
+        }
+         
+         isperfect(num+1);
+    
+    
+    
+}
+
+int main() {
+    int start, end;
+
+    printf("Enter start number: ");
+    scanf("%d", &start);
+
+
+    
+       isperfect(start);
+    
+
+    return 0;
+}
