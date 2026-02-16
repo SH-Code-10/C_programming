@@ -1,0 +1,30 @@
+#include <stdio.h>
+int conversion(int num){
+    int n[100];
+    int i=0;
+    int d;
+    
+    while(num>0){
+        n[i]=num%2;
+        num/=2;
+        i++;
+      }
+    printf("%d\n",i);   // i=3 when u enter num=5
+    int j;
+    for(j=i-1;j>=0;j--){
+    /*i-1 done because in function while loop there i increase value then 
+    not enter into the loop 
+        
+        */printf("%d",n[j]);
+    }
+}
+int main()
+{
+    printf("enter the number");
+    int a;
+    scanf("%d",&a);
+ conversion(a);
+}
+        
+    
+}
